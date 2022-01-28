@@ -197,3 +197,46 @@
     font-size: 45px;
     margin-right: 10px;
 }
+
+/* Mobile / responsivo */
+
+/*tela menor de 450px de width roda mobile*/
+@media(max-width: 450px){
+    #container{
+        flex-direction: column;
+    }
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio--border-color);
+    }
+
+    #bio-container h2 {
+        display: none;
+    }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container .description{
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+    }
+
+    #btn-projects {
+        margin: 20px auto;
+    }
+
+    .skills-box{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .skills-box i{
+        font-size: 60px;
+    }
+}
